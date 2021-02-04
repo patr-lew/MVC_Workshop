@@ -35,6 +35,7 @@ public class EditUser extends HttpServlet {
         updatedUser.setId(id);
         UserDAO.update(updatedUser);
 
+        // TODO: 05/02/2021 fix password validation 
         if (updatedUser.getPassword().equals(oldUser.getPassword()) || UserDAO.hashPassword(updatedUser.getPassword()).equals(oldUser.getPassword())) {
             response.sendRedirect("/user/list?info=success");
         } else {
