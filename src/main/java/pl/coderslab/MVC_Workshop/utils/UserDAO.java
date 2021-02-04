@@ -69,7 +69,7 @@ public class UserDAO {
         return null;
     }
 
-    //creating pl.coderslab.entity.User object from ResultSet
+    //creating User object from ResultSet
     private static User getUser(ResultSet result) throws SQLException {
         User user;
         int id = result.getInt(1);
@@ -105,17 +105,17 @@ public class UserDAO {
         } catch (SQLException e) {
             System.out.println("SQLException caught in method update()");
         } catch (NullPointerException e) {
-            System.out.println("pl.coderslab.entity.User to be updated doesn't exist");
+            System.out.println("User to be updated doesn't exist");
         }
         return false;
     }
 
     public static boolean delete(int userId) {
-/*        if (read(userId) == null) {
-            System.out.println("pl.coderslab.entity.User under id " + userId + " doesn't exist. Nothing to delete.");
+        if (read(userId) == null) {
+            System.out.println("User under id " + userId + " doesn't exist. Nothing to delete.");
             return false;
         }
-*/
+
 
         try (Connection connection = DbUtil.getConnection()) {
             PreparedStatement statement = connection.prepareStatement(DELETE_USER_QUERY);
