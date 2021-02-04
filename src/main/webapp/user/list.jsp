@@ -46,7 +46,7 @@
                         <td>${count.count}</td>
                         <td>${user.userName}</td>
                         <td>${user.email}</td>
-                        <td><a href="/user/delete?id=${user.id}">Usuń</a>
+                        <td><a href="/user/toDelete.jsp?id=${user.id}&username=${user.userName}">Usuń</a>
                             <a href="/user/edit?id=${user.id}">Edytuj</a>
                             <a href="/user/show?id=${user.id}">Pokaż</a>
                         </td>
