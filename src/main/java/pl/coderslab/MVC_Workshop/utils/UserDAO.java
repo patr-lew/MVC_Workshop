@@ -135,7 +135,7 @@ public class UserDAO {
         return findAll("id", "%");
     }
 
-    public static List<User> findAll(String column, String question) {
+    private static List<User> findAll(String column, String question) {
         //checking if String column is a name of actual column
         boolean wrongColumn = true;
         for (String col : COLUMNS) {
