@@ -10,11 +10,14 @@ import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-@WebServlet(name = "AddUser", value = "/user/add")
-public class AddUser extends HttpServlet {
+@WebServlet(name = "EditUser", value = "/user/edit")
+public class EditUser extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/user/add.jsp").forward(request, response);
+        int id = Integer.parseInt(request.getParameter("id"));
+        User user = UserDAO.read(id);
+        request.setAttribute("user", user);
+        request.getRequestDispatcher("/user/edit.jsp").forward(request, response);
     }
 
     @Override
@@ -22,19 +25,24 @@ public class AddUser extends HttpServlet {
         String username = request.getParameter("username");
         String email = request.getParameter("email");
         String password = request.getParameter("password");
+        int id = Integer.parseInt(request.getParameter("id"));
 
-        Pattern pattern = Pattern.compile("^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})$");
-        Matcher matcher = pattern.matcher(email);
-        if (matcher.matches()) {
-            User user = new User(username, email, password);
-            UserDAO.create(user);
-            // TODO: 04/02/2021 add info when user is not added because email exists already in the database 
+        User oldUser = UserDAO.read(id);
 
+        // TODO: 04/02/2021 should I change hashPassword to public? any risk with that??
+
+        User updatedUser = new User(username, email, password);
+        updatedUser.setId(id);
+        UserDAO.update(updatedUser);
+
+        if (updatedUser.getPassword().equals(oldUser.getPassword()) || UserDAO.hashPassword(updatedUser.getPassword()).equals(oldUser.getPassword())) {
             response.sendRedirect("/user/list?info=success");
         } else {
             // TODO: 04/02/2021 add error info and forward failure
-            response.sendRedirect("/user/add");
+            response.sendRedirect("/user/list?info=wrong_password");
 
         }
     }
 }
+
+

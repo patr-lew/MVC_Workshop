@@ -9,10 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="157668f1-7fa7-4e59-bbf3-57ac67050f55" name="Default Changelist" comment="add user success info">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/DeleteUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/user/toDelete.jsp" afterDir="false" />
+    <list default="true" id="157668f1-7fa7-4e59-bbf3-57ac67050f55" name="Default Changelist" comment="edit user done&#10;- refactored password validation from UserDAO to EditUser">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/EditUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/user/edit.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/AddUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/AddUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/utils/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/utils/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -289,7 +291,7 @@
       <option name="presentableId" value="Default" />
       <updated>1612339105689</updated>
       <workItem from="1612339106849" duration="1400000" />
-      <workItem from="1612341025489" duration="26681000" />
+      <workItem from="1612341025489" duration="28601000" />
     </task>
     <task id="LOCAL-00001" summary="copied Model classes">
       <created>1612341788775</created>
@@ -354,7 +356,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612477230984</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="delete user done">
+      <created>1612478364041</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1612478364041</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,6 +390,8 @@
     <MESSAGE value="show user done" />
     <MESSAGE value="add user done" />
     <MESSAGE value="add user success info" />
-    <option name="LAST_COMMIT_MESSAGE" value="add user success info" />
+    <MESSAGE value="delete user done" />
+    <MESSAGE value="edit user done&#10;- refactored password validation from UserDAO to EditUser" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit user done&#10;- refactored password validation from UserDAO to EditUser" />
   </component>
 </project>

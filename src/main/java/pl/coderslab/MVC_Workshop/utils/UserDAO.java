@@ -44,7 +44,7 @@ public class UserDAO {
     }
 
 
-    private static String hashPassword(String password) {
+    public static String hashPassword(String password) {
         return BCrypt.hashpw(password, BCrypt.gensalt());
     }
 
@@ -93,9 +93,7 @@ public class UserDAO {
             PreparedStatement statement = connection.prepareStatement(UPDATE_USER_QUERY);
             statement.setString(1, user.getEmail());
             statement.setString(2, user.getUserName());
-            if (user.getPassword().equals(oldUser.getPassword()) || hashPassword(user.getPassword()).equals(oldUser.getPassword())) {
-                statement.setString(3, hashPassword(user.getPassword()));
-            }
+            statement.setString(3, hashPassword(user.getPassword()));
             statement.setInt(4, user.getId());
 
             if (statement.executeUpdate() > 0) {
@@ -104,6 +102,7 @@ public class UserDAO {
 
         } catch (SQLException e) {
             System.out.println("SQLException caught in method update()");
+            e.printStackTrace();
         } catch (NullPointerException e) {
             System.out.println("User to be updated doesn't exist");
         }
