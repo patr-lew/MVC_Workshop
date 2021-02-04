@@ -10,12 +10,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserDAO {
-    public static final String CREATE_USER_QUERY = "INSERT INTO users(username, email, password) VALUES (?,?,?)";
-    public static final String READ_USER_ON_ID_QUERY = "SELECT id, username, email, password FROM users WHERE id = ?";
-    public static final String UPDATE_USER_QUERY = "UPDATE users SET email = ?, username = ?, password = ? WHERE id = ?";
-    public static final String DELETE_USER_QUERY = "DELETE FROM users WHERE id = ?";
-    public static final String FIND_ALL_QUERY = "SELECT id, username, email, password FROM users WHERE column LIKE ?";
-    public static final String[] COLUMNS = {"id", "username", "email", "password"};
+    private static final String CREATE_USER_QUERY = "INSERT INTO users(username, email, password) VALUES (?,?,?)";
+    private static final String READ_USER_ON_ID_QUERY = "SELECT id, username, email, password FROM users WHERE id = ?";
+    private static final String UPDATE_USER_QUERY = "UPDATE users SET email = ?, username = ?, password = ? WHERE id = ?";
+    private static final String DELETE_USER_QUERY = "DELETE FROM users WHERE id = ?";
+    private static final String FIND_ALL_QUERY = "SELECT id, username, email, password FROM users WHERE column LIKE ?";
+    private static final String[] COLUMNS = {"id", "username", "email", "password"};
 
 
     public static User create(User user) {

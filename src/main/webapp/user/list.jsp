@@ -7,7 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<%@ include file="header.jsp"%>
+<%@ include file="header.jsp" %>
 
 
 <!-- Begin Page Content -->
@@ -26,13 +26,29 @@
             <h6 class="m-0 font-weight-bold text-primary">Development Approach</h6>
         </div>
         <div class="card-body">
-            <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce
-                CSS bloat and poor page performance. Custom CSS classes are used to create
-                custom components and custom utility classes.</p>
-            <p class="mb-0">Before working with this theme, you should become familiar with the
-                Bootstrap framework, especially the utility classes.</p>
+            <p>Lista wszystkich użytkowników</p>
+
+            <table>
+                <tr>
+                    <th>Lp.</th>
+                    <th>Użytkownik</th>
+                    <th>e-mail</th>
+                    <th>Akcja</th>
+                </tr>
+                <c:forEach items="${users}" var="user" varStatus="count">
+                    <tr>
+                        <td>${count.count}</td>
+                        <td>${user.userName}</td>
+                        <td>${user.email}</td>
+                        <td><a href="/delete">Usuń</a>
+                            <a href="/edit">Edytuj</a>
+                            <a href="/show">Pokaż</a>
+                        </td>
+                    </tr>
+                </c:forEach>
+            </table>
         </div>
     </div>
 </div>
 
-<%@ include file="footer.jsp"%>
+<%@ include file="footer.jsp" %>
