@@ -31,8 +31,8 @@ public class AddUser extends HttpServlet {
 
             response.sendRedirect("/user/list?info=success");
         } else {
-            // TODO: 04/02/2021 add error screen
-            response.sendRedirect("/user/list?info=failure");
+            // TODO: 04/02/2021 add error info and forward failure
+            response.sendRedirect("/user/add");
 
         }
     }
