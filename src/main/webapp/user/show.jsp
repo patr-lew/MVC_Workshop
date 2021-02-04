@@ -2,13 +2,11 @@
   Created by IntelliJ IDEA.
   User: patryk
   Date: 04/02/2021
-  Time: 08:14
+  Time: 22:06
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
 <%@ include file="header.jsp" %>
-
 
 <!-- Begin Page Content -->
 <div class="container-fluid">
@@ -28,23 +26,17 @@
         <div class="card-body">
             <table>
                 <tr>
-                    <th>Lp.</th>
-                    <th>Użytkownik</th>
-                    <th>e-mail</th>
-                    <th>Akcja</th>
+                    <th>ID</th>
+                    <td>${user.id}</td>
                 </tr>
-                <c:forEach items="${users}" var="user" varStatus="count">
-                    <tr>
-                        <%-- @todo add formatting --%>
-                        <td>${count.count}</td>
-                        <td>${user.userName}</td>
-                        <td>${user.email}</td>
-                        <td><a href="/user/delete?id=${user.id}">Usuń</a>
-                            <a href="/user/edit?id=${user.id}">Edytuj</a>
-                            <a href="/user/show?id=${user.id}">Pokaż</a>
-                        </td>
-                    </tr>
-                </c:forEach>
+                <tr>
+                    <th>Nazwa użytkownika</th>
+                    <td>${user.userName}</td>
+                </tr>
+                <tr>
+                    <th>e-mail</th>
+                    <td>${user.email}</td>
+                </tr>
             </table>
         </div>
     </div>
