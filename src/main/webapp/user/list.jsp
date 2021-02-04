@@ -12,7 +12,13 @@
 
 <!-- Begin Page Content -->
 <div class="container-fluid">
-
+    <div>
+        <c:if test="${not empty param.info}">
+            <c:if test="${param.info == 'success'}">
+                <h4>Poprawnie dodano użytkownika</h4>
+            </c:if>
+        </c:if>
+    </div>
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">Użytkownicy</h1>

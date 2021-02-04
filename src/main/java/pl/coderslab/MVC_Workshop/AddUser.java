@@ -29,7 +29,6 @@ public class AddUser extends HttpServlet {
             User user = new User(username, email, password);
             UserDAO.create(user);
 
-            // TODO: 04/02/2021 add information about success of operation
             response.sendRedirect("/user/list?info=success");
         } else {
             // TODO: 04/02/2021 add error screen
