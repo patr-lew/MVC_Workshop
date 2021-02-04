@@ -1,11 +1,14 @@
 package pl.coderslab.MVC_Workshop;
 
+import pl.coderslab.MVC_Workshop.utils.User;
 import pl.coderslab.MVC_Workshop.utils.UserDAO;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @WebServlet(name = "ShowUser", value = "/user/show")
 public class ShowUser extends HttpServlet {

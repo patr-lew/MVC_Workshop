@@ -9,11 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="157668f1-7fa7-4e59-bbf3-57ac67050f55" name="Default Changelist" comment="connection to db works&#10;some minor typos fixed">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/ShowUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/user/show.jsp" afterDir="false" />
+    <list default="true" id="157668f1-7fa7-4e59-bbf3-57ac67050f55" name="Default Changelist" comment="show user done">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/AddUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/user/add.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/ShowUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/ShowUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/user/show.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user/show.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,7 +282,7 @@
       <option name="presentableId" value="Default" />
       <updated>1612339105689</updated>
       <workItem from="1612339106849" duration="1400000" />
-      <workItem from="1612341025489" duration="21964000" />
+      <workItem from="1612341025489" duration="24307000" />
     </task>
     <task id="LOCAL-00001" summary="copied Model classes">
       <created>1612341788775</created>
@@ -317,7 +319,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612469212226</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="show user done">
+      <created>1612473712418</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1612473712418</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,6 +350,7 @@
     <MESSAGE value="refactored folder 'theme'" />
     <MESSAGE value="connection to db works" />
     <MESSAGE value="connection to db works&#10;some minor typos fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="connection to db works&#10;some minor typos fixed" />
+    <MESSAGE value="show user done" />
+    <option name="LAST_COMMIT_MESSAGE" value="show user done" />
   </component>
 </project>
