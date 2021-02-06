@@ -1,5 +1,6 @@
 package pl.coderslab.MVC_Workshop;
 
+import org.mindrot.jbcrypt.BCrypt;
 import pl.coderslab.MVC_Workshop.utils.User;
 import pl.coderslab.MVC_Workshop.utils.UserDAO;
 
@@ -33,10 +34,9 @@ public class EditUser extends HttpServlet {
 
         User updatedUser = new User(username, email, password);
         updatedUser.setId(id);
-        UserDAO.update(updatedUser);
 
-        // TODO: 05/02/2021 fix password validation 
-        if (updatedUser.getPassword().equals(oldUser.getPassword()) || UserDAO.hashPassword(updatedUser.getPassword()).equals(oldUser.getPassword())) {
+        if (updatedUser.getPassword().equals(oldUser.getPassword()) || BCrypt.checkpw(updatedUser.getPassword(), oldUser.getPassword())) {
+            UserDAO.update(updatedUser);
             response.sendRedirect("/user/list?info=success");
         } else {
             // TODO: 04/02/2021 add error info and forward failure
