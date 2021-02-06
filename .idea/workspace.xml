@@ -9,8 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="157668f1-7fa7-4e59-bbf3-57ac67050f55" name="Default Changelist" comment="added css formatting">
+    <list default="true" id="157668f1-7fa7-4e59-bbf3-57ac67050f55" name="Default Changelist" comment="added username validation">
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/AddUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/AddUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/ListUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/ListUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -305,7 +307,7 @@
       <updated>1612339105689</updated>
       <workItem from="1612339106849" duration="1400000" />
       <workItem from="1612341025489" duration="33170000" />
-      <workItem from="1612610752414" duration="3369000" />
+      <workItem from="1612610752414" duration="4021000" />
     </task>
     <task id="LOCAL-00001" summary="copied Model classes">
       <created>1612341788775</created>
@@ -419,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612616288741</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="added username validation">
+      <created>1612616634164</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1612616634165</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -453,6 +462,7 @@
     <MESSAGE value="added map infos" />
     <MESSAGE value="added status information of last action" />
     <MESSAGE value="added css formatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="added css formatting" />
+    <MESSAGE value="added username validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="added username validation" />
   </component>
 </project>

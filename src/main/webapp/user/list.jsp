@@ -12,11 +12,15 @@
 
 <!-- Begin Page Content -->
 <div class="container-fluid">
-    <div class="card shad mb-auto">
-        <c:if test="${not empty param.info}">
-            <c:out value="${infos.get(param.info)}"/>
-        </c:if>
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <c:if test="${not empty param.info}">
+                <h3 class="text-center text-warning"><c:out value="${infos.get(param.info)}"/></h3>
+            </c:if>
+        </div>
     </div>
+
+
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">Użytkownicy</h1>

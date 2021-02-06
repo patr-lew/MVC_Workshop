@@ -25,6 +25,7 @@ public class ListUsers extends HttpServlet {
         infos.put("failureAdd", "Nowy użytkownik nie został dodany");
         infos.put("successDelete", "Wybrany użytkownik został usunięty");
         infos.put("wrongPassword", "Podane hasło jest nieprawidłowe");
+        infos.put("userExists", "Użytkownik o podanym adresie email już istnieje");
         
         request.setAttribute("infos", infos);
         request.setAttribute("users", users);
