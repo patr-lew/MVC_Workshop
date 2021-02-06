@@ -23,9 +23,19 @@ public class AddUser extends HttpServlet {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
 
-        Pattern pattern = Pattern.compile("^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})$");
-        Matcher matcher = pattern.matcher(email);
-        if (matcher.matches()) {
+        //username validation
+        Pattern pattern = Pattern.compile("[a-zA-Z0-9_\\-\\.]+");
+        Matcher usernameMatcher = pattern.matcher(username);
+        boolean isUsernameValid = usernameMatcher.matches();
+
+        //email validation
+        pattern = Pattern.compile("^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})$");
+         Matcher emailMatcher = pattern.matcher(email);
+         boolean isEmailValid = emailMatcher.matches();
+
+        // TODO: 06/02/2021 password validation
+
+        if (isEmailValid && isUsernameValid) {
             User user = new User(username, email, password);
             UserDAO.create(user);
             // TODO: 04/02/2021 add info when user is not added because email exists already in the database
