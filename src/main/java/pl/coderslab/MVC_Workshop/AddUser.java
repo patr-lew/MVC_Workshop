@@ -28,12 +28,11 @@ public class AddUser extends HttpServlet {
         if (matcher.matches()) {
             User user = new User(username, email, password);
             UserDAO.create(user);
-            // TODO: 04/02/2021 add info when user is not added because email exists already in the database 
+            // TODO: 04/02/2021 add info when user is not added because email exists already in the database
 
-            response.sendRedirect("/user/list?info=success");
+            response.sendRedirect("/user/list?info=successAdd");
         } else {
-            // TODO: 04/02/2021 add error info and forward failure
-            response.sendRedirect("/user/add");
+            response.sendRedirect("/user/list?info=failureAdd");
 
         }
     }

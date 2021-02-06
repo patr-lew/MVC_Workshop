@@ -13,7 +13,7 @@ public class DeleteUser extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
         UserDAO.delete(id);
-        response.sendRedirect("/user/list");
+        response.sendRedirect("/user/list?info=successDelete");
     }
 
     @Override

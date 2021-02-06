@@ -9,11 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="157668f1-7fa7-4e59-bbf3-57ac67050f55" name="Default Changelist" comment="added map infos">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/EditUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/EditUser.java" afterDir="false" />
+    <list default="true" id="157668f1-7fa7-4e59-bbf3-57ac67050f55" name="Default Changelist" comment="added status information of last action">
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/AddUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/AddUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/DeleteUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/DeleteUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/ListUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/ListUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +59,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/user" />
@@ -289,7 +289,7 @@
       <option name="presentableId" value="Default" />
       <updated>1612339105689</updated>
       <workItem from="1612339106849" duration="1400000" />
-      <workItem from="1612341025489" duration="32456000" />
+      <workItem from="1612341025489" duration="33170000" />
     </task>
     <task id="LOCAL-00001" summary="copied Model classes">
       <created>1612341788775</created>
@@ -389,7 +389,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612603862389</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="added status information of last action">
+      <created>1612605727412</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1612605727412</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -420,6 +427,7 @@
     <MESSAGE value="edit user done&#10;- refactored password validation from UserDAO to EditUser" />
     <MESSAGE value="fixed passwd validation" />
     <MESSAGE value="added map infos" />
-    <option name="LAST_COMMIT_MESSAGE" value="added map infos" />
+    <MESSAGE value="added status information of last action" />
+    <option name="LAST_COMMIT_MESSAGE" value="added status information of last action" />
   </component>
 </project>
