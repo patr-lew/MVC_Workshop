@@ -23,12 +23,21 @@
     <!-- panel administratora -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Dodaj nowego użytkownika</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Dodaj nowego użytkownika</h6><br/>
             <form action="/user/add" method="post">
-                nazwa użytkownika: <br> <input name="username" type="text"> <br><br>
-                email: <br> <input type="text" name="email"> <br><br>
-                hasło: <br><input type="password" name="password"><br><br>
-                <input type="submit" value="wyślij">
+                <div class="form-group">
+                    <label for="userName">Nazwa Użytkownika:</label>
+                    <input name="username" type="text" class="form-control" id="userName" placeholder="Nazwa użytkownika">
+                </div>
+                <div class="form-group">
+                    <label for="userEmail">Email:</label>
+                    <input name="email" type="text" class="form-control" id="userEmail" placeholder="Adres e-mail">
+                </div>
+                <div class="form-group">
+                    <label for="userPass">Hasło:</label>
+                    <input name="password" type="password" class="form-control" id="userPass" placeholder="Hasło">
+                </div>
+                <button type="submit" class="brn btn-primary">Zapisz</button>
             </form>
         </div>
         <div class="card-body">

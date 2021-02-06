@@ -26,11 +26,21 @@
         <div class="card-header py-3">
             <h6 class="m-0 font-weight-bold text-primary">Edytuj użytkownika</h6>
             <form action="/user/edit" method="post">
-                nazwa użytkownika: <br> <input name="username" value="${user.userName}" type="text"> <br><br>
-                email: <br> <input type="text" name="email" value="${user.email}"> <br><br>
-                hasło: <br><input type="password" name="password" placeholder="podaj ponownie hasło"><br><br>
-                <input type="hidden" type="text" name="id" value="${user.id}">
-                <input type="submit" value="wyślij">
+
+                <div class="form-group">
+                    <label for="userName">Nazwa Użytkownika:</label>
+                    <input name="username" type="text" class="form-control" id="userName" value="${user.userName}">
+                </div>
+                <div class="form-group">
+                    <label for="userEmail">Email:</label>
+                    <input name="email" type="text" class="form-control" id="userEmail" value="${user.email}">
+                </div>
+                <div class="form-group">
+                    <label for="userPass">Hasło:</label>
+                    <input name="password" type="password" class="form-control" id="userPass" placeholder="Potwierdź hasłem">
+                </div>
+                <input type="hidden" name="id" value="${user.id}">
+                <button type="submit" class="brn btn-primary">Zapisz</button>
             </form>
         </div>
 

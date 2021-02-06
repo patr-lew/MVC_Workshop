@@ -30,15 +30,15 @@
     <!-- panel administratora -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Czy na pewno chcesz usunąć użytkownika ${param.username}?</h6>
+            <h6 class="m-0 font-weight-bold text-primary -align-center">Czy na pewno chcesz usunąć użytkownika ${param.username}?</h6>
         </div>
-        <div>
+        <div class="card-body -align-center">
             <form action="${pageContext.request.contextPath}/user/delete" method="get">
                 <input type="hidden" value="${param.id}" name="id">
-                <button type="submit" value="YAS!">YAS!</button>
+                <button type="submit" class="btn btn-danger" value="YAS!">YAS!</button>
             </form>
             <form action="${pageContext.request.contextPath}/user/list" method="get">
-                <button type="submit" value="Nope, zmieniłem zdanie">Nope, zmieniłem zdanie</button>
+                <button type="submit" class="btn btn-primary" value="Nope, zmieniłem zdanie">Nope, zmieniłem zdanie</button>
             </form>
         </div>
     </div>

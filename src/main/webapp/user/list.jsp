@@ -14,7 +14,7 @@
 <div class="container-fluid">
     <div class="card shad mb-auto">
         <c:if test="${not empty param.info}">
-            <c:out value="${infos.get(param.info)}" />
+            <c:out value="${infos.get(param.info)}"/>
         </c:if>
     </div>
     <!-- Page Heading -->
@@ -31,26 +31,28 @@
             <h6 class="m-0 font-weight-bold text-primary">Lista wszystkich użytkowników</h6>
         </div>
         <div class="card-body">
-            <table>
-                <tr>
-                    <th>Lp.</th>
-                    <th>Użytkownik</th>
-                    <th>e-mail</th>
-                    <th>Akcja</th>
-                </tr>
-                <c:forEach items="${users}" var="user" varStatus="count">
+            <div class="table-responsive">
+                <table class="table">
                     <tr>
-                        <%-- @todo add formatting --%>
-                        <td>${count.count}</td>
-                        <td>${user.userName}</td>
-                        <td>${user.email}</td>
-                        <td><a href="${pageContext.request.contextPath}/user/toDelete.jsp?id=${user.id}&username=${user.userName}">Usuń</a>
-                            <a href="${pageContext.request.contextPath}/user/edit?id=${user.id}">Edytuj</a>
-                            <a href="${pageContext.request.contextPath}/user/show?id=${user.id}">Pokaż</a>
-                        </td>
+                        <th>Lp.</th>
+                        <th>Użytkownik</th>
+                        <th>e-mail</th>
+                        <th>Akcja</th>
                     </tr>
-                </c:forEach>
-            </table>
+                    <c:forEach items="${users}" var="user" varStatus="count">
+                        <tr>
+                            <td>${count.count}</td>
+                            <td>${user.userName}</td>
+                            <td>${user.email}</td>
+                            <td>
+                                <a href="${pageContext.request.contextPath}/user/toDelete.jsp?id=${user.id}&username=${user.userName}">Usuń</a>
+                                <a href="${pageContext.request.contextPath}/user/edit?id=${user.id}">Edytuj</a>
+                                <a href="${pageContext.request.contextPath}/user/show?id=${user.id}">Pokaż</a>
+                            </td>
+                        </tr>
+                    </c:forEach>
+                </table>
+            </div>
         </div>
     </div>
 </div>
