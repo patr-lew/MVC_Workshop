@@ -9,8 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="157668f1-7fa7-4e59-bbf3-57ac67050f55" name="Default Changelist" comment="edit user done&#10;- refactored password validation from UserDAO to EditUser">
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/EditUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/EditUser.java" afterDir="false" />
+    <list default="true" id="157668f1-7fa7-4e59-bbf3-57ac67050f55" name="Default Changelist" comment="fixed passwd validation">
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/ListUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/ListUsers.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,7 +286,7 @@
       <option name="presentableId" value="Default" />
       <updated>1612339105689</updated>
       <workItem from="1612339106849" duration="1400000" />
-      <workItem from="1612341025489" duration="30146000" />
+      <workItem from="1612341025489" duration="30844000" />
     </task>
     <task id="LOCAL-00001" summary="copied Model classes">
       <created>1612341788775</created>
@@ -372,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612480308968</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fixed passwd validation">
+      <created>1612603422209</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1612603422209</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,6 +408,7 @@
     <MESSAGE value="add user success info" />
     <MESSAGE value="delete user done" />
     <MESSAGE value="edit user done&#10;- refactored password validation from UserDAO to EditUser" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit user done&#10;- refactored password validation from UserDAO to EditUser" />
+    <MESSAGE value="fixed passwd validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed passwd validation" />
   </component>
 </project>
