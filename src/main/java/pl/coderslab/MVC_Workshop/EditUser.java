@@ -30,17 +30,17 @@ public class EditUser extends HttpServlet {
 
         User oldUser = UserDAO.read(id);
 
-        // TODO: 04/02/2021 should I change hashPassword to public? any risk with that??
+        // TODO: 04/02/2021 QUESTION should I change hashPassword to public? any risk with that??
 
         User updatedUser = new User(username, email, password);
         updatedUser.setId(id);
 
+        // TODO: 06/02/2021 "java.lang.IllegalArgumentException: Invalid salt version" with 'older users'??
         if (updatedUser.getPassword().equals(oldUser.getPassword()) || BCrypt.checkpw(updatedUser.getPassword(), oldUser.getPassword())) {
             UserDAO.update(updatedUser);
-            response.sendRedirect("/user/list?info=success");
+            response.sendRedirect("/user/list?info=successEdit");
         } else {
-            // TODO: 04/02/2021 add error info and forward failure
-            response.sendRedirect("/user/list?info=wrong_password");
+            response.sendRedirect("/user/list?info=wrongPassword");
 
         }
     }

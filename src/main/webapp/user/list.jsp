@@ -12,11 +12,9 @@
 
 <!-- Begin Page Content -->
 <div class="container-fluid">
-    <div>
+    <div class="card shad mb-auto">
         <c:if test="${not empty param.info}">
-            <c:if test="${param.info == 'success'}">
-                <h4>Poprawnie dodano użytkownika</h4>
-            </c:if>
+            <c:out value="${infos.get(param.info)}" />
         </c:if>
     </div>
     <!-- Page Heading -->

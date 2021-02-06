@@ -9,8 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="157668f1-7fa7-4e59-bbf3-57ac67050f55" name="Default Changelist" comment="fixed passwd validation">
+    <list default="true" id="157668f1-7fa7-4e59-bbf3-57ac67050f55" name="Default Changelist" comment="added map infos">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/EditUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/EditUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/ListUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/MVC_Workshop/ListUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,7 +289,7 @@
       <option name="presentableId" value="Default" />
       <updated>1612339105689</updated>
       <workItem from="1612339106849" duration="1400000" />
-      <workItem from="1612341025489" duration="30844000" />
+      <workItem from="1612341025489" duration="32456000" />
     </task>
     <task id="LOCAL-00001" summary="copied Model classes">
       <created>1612341788775</created>
@@ -379,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612603422209</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added map infos">
+      <created>1612603862389</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1612603862389</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,6 +419,7 @@
     <MESSAGE value="delete user done" />
     <MESSAGE value="edit user done&#10;- refactored password validation from UserDAO to EditUser" />
     <MESSAGE value="fixed passwd validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed passwd validation" />
+    <MESSAGE value="added map infos" />
+    <option name="LAST_COMMIT_MESSAGE" value="added map infos" />
   </component>
 </project>
